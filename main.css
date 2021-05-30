@@ -1,0 +1,315 @@
+/*<><><><><><><><><><><><><><><><><><> ADDING FIRST AID KID <><><><><><><><><><><><><><><<><><><><>>*/
+/* Add the neccessary Things befor Start */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Lets make grid for the App */
+.mainContainer{
+    display: grid; /*displaying Grid in mainContainer */
+    height: 100vh;
+    grid-template-columns: repeat(12 , 1fr);/*Seperating column 12 with 1 factor*/
+    gap: 5px; /*Giving some space for the column*/
+    grid-template-rows: auto 1fr;
+}
+
+/* Adding Border for Grid for reading purpose */
+.headingSections {
+    border: 1px solid black;
+}
+.navBarSideSlot {
+    border: 1px solid orange;
+}
+/*<><><><><><><><><><><><><><><><><><> NOW MACHINE ABLE TO RUN <><><><><><><><><><><><><><><<><><><><>>*/
+
+
+
+/*<><><><><><><><><><><><><><><><><><> HEADING SECTION START <><><><><><><><><><><><><><><><><><><>*/
+/* Inside the heading section  display everything flex*/
+.headingSections{
+    padding: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;  /* Sprly Came ouput */
+    background-color: #181818;
+}
+
+.handBurgerSlot{
+    width: 8%;
+    text-align: center;
+}
+.handBurgerSlot i {
+    font-size: 25px;
+    color: white;
+}
+
+/* //Facing issue in logoSlot want to increase the width : */
+.logoSlot{
+    width: 15%;
+    /* And here want to make both the item to same line so */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+}
+.logoSlot h4 {
+    font-family: 'Oswald', sans-serif;
+}
+.logoSlot i {
+    margin: 0px 7px;
+    color: rgb(23, 180, 70);
+    
+}
+
+/* Now Search box is somewhat ugly so increase the width*/
+.searchVideosSlot{
+    width: 40%;
+
+}
+.mainForm{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left:5px ;
+}
+
+
+/* //And stricly increase the input bar inside the .searchVideosSlot to 100% */
+.searchVideosSlot{
+    width: 30%;
+    
+}
+.mainForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.searchBox{
+    flex-basis: 80%;
+}
+#serchVideo_id{
+    width: 100%;
+    padding: 4px;
+    background-color: black;
+    caret-color: green;
+    padding-left: 4px;
+    border: 1px solid silver;
+    font-size: 17px;
+    color: rgb(23, 180, 70);
+    font-weight: 600;
+}
+.btnSection{
+    flex-basis: 20%;
+    padding: 4px;
+}
+.btnSection button {
+    width: 100%;
+    padding: 4px;
+    margin-left: 0px;
+    background-color: black;
+    color: rgb(23, 180, 70);
+    border: 1px solid silver;
+}
+.btnSection button i {
+    width: 100%;
+}
+
+
+/* For video Upload section */
+.videoUploadSlot{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.videoUploadSlot h4{
+    color: white;
+}
+.videoUploadSlot i {
+    color: rgb(23, 180, 70);
+    margin: 10px;
+}
+
+/* For Button Section */
+/*Here The button either logot is visible or login visible know depend on user stats
+So we are blocking the display of both button*/
+.profileStatus{
+    width: 20%;
+}
+.profileStatus button {
+    background-color: rgb(23, 180, 70);
+    border: 1px solid black;
+    padding: 4px;
+    border-radius: 2px;
+}
+
+
+
+/* Avatar Section */
+.avatarPhoto{
+    width: 5%;
+    text-align: center;
+    color: rgb(23, 180, 70);
+}
+/*<><><><><><><><><><><><><><><><><><> HEADING SECTION END <><><><><><><><><><><><><><><><><><><>*/
+
+
+/*<><><><><><><><><><><><><><><><><><> SECOND ROW SECTION START <><><><><><><><><><><><><><><><><><><>*/
+.navBarSideSlot{
+    background-color: #181818;
+    color: white;
+}
+
+/*<><><><><><><><><><><><><><><><><><> SECOND ROW SECTION END <><><><><><><><><><><><><><><><><><><>*/
+.videoSection{
+    border: 1px solid green;
+    height: 100vh;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(12 , 1fr);
+    grid-template-rows:0.1fr 0.2fr 0.3fr;
+    background-color: #0F0F0F;
+    color: white;
+    
+}
+
+
+
+/* <><><><><><><><>><><><><><><><><><><><><><><><><><><><><><><><><><><><>><><><><><><><>><><><><><><>><> */
+.bannerDiv {
+    height: 200px;
+}
+.bannerDiv img{
+    width: 100%;
+    height: 194px;
+}
+/* Banner is over : */
+/* Row : 2 */
+.descriptionBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+/* We want to five some spaces between the text */
+.descriptionDiv {
+
+    padding: 3px;
+}
+.descriptionDiv h4 {
+    margin: 15px;
+}
+
+/* In stats we have give some space and margin for eash stat */
+.subDiv {
+    padding: 4px;
+}
+.subDiv h4 {
+    margin: 10px;
+}
+/* <><><><><><><><>><><><><><><><><><><><><><><><><><><><><><><><><><><><>><><><><><><><>><><><><><><>><> */
+
+
+/* <><><><><><><><>><><><><><><><><><><><><><><><><><><><><><><><><><><><>><><><><><><><>><><><><><><>><> */
+
+/* ownwerInfo */
+.nameBox {
+    
+    padding-left: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nameBox img{
+
+
+    height: 12vh;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+/* <><><><><><><><>><><><><><><><><><><><><><><><><><><><><><><><><><><><>><><><><><><><>><><><><><><>><> */
+
+
+/* First For Mobile : */
+@media (min-width : 200px) {
+    .navBarSideSlot {
+        display: none;
+    }
+    .headingSections {
+        grid-column: 1 / span 12;
+    }
+    .nameBox {
+        grid-column: 1 / span 12;
+    }
+    .nameBox img{
+        width: 23%;
+    }
+
+    .videoSection {
+        grid-column:  1 / span 12;
+    }
+    .bannerDiv {
+        grid-column: 1 / span 12;
+    }
+    .descriptionDiv{
+        flex-basis: 100%;
+    }
+    .subDiv {
+        flex-basis: 100%;
+    }
+    .descriptionBox {
+        grid-column: 1 / span 12;
+    }
+
+}
+@media (min-width : 760px) {
+    .nameBox {
+        grid-column: 1 / span 12;
+    }
+    .nameBox img{
+        width: 12%;
+    }
+
+    .navBarSideSlot {
+        display: block;
+    }
+    .nameBox{
+        grid-column: 1 / span 12;
+    }
+
+    .navBarSideSlot {
+        grid-column: 1 / span 1;
+    }
+    .videoSection{
+        grid-column: 2 / span 11;
+    }
+    .bannerDiv{
+        grid-column: 1 / span 12;
+    }
+    .descriptionBox{
+        grid-column: 1 / span 12;
+
+    }
+    .descriptionDiv{
+        flex-basis: 70%;
+    }
+    .subDiv{
+        flex-basis: 25%;
+    }
+
+}
+
+@media (min-width : 1000px) {
+    .nameBox img {
+        width: 12%;
+    }
+}
